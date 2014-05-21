@@ -22,6 +22,9 @@
 		480DB35C192A957A00EE3EEF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480DB340192A957A00EE3EEF /* CoreData.framework */; };
 		480DB364192A957A00EE3EEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 480DB362192A957A00EE3EEF /* InfoPlist.strings */; };
 		480DB366192A957A00EE3EEF /* LocationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 480DB365192A957A00EE3EEF /* LocationsTests.m */; };
+		480DB370192A95AD00EE3EEF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480DB36F192A95AD00EE3EEF /* CoreLocation.framework */; };
+		480DB373192AC15900EE3EEF /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480DB372192AC15900EE3EEF /* RootViewController.m */; };
+		480DB376192AE2E800EE3EEF /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 480DB375192AE2E800EE3EEF /* Event.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		480DB361192A957A00EE3EEF /* LocationsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocationsTests-Info.plist"; sourceTree = "<group>"; };
 		480DB363192A957A00EE3EEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		480DB365192A957A00EE3EEF /* LocationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationsTests.m; sourceTree = "<group>"; };
+		480DB36F192A95AD00EE3EEF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		480DB371192AC15900EE3EEF /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		480DB372192AC15900EE3EEF /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		480DB374192AE2E800EE3EEF /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		480DB375192AE2E800EE3EEF /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480DB370192A95AD00EE3EEF /* CoreLocation.framework in Frameworks */,
 				480DB33D192A957A00EE3EEF /* CoreGraphics.framework in Frameworks */,
 				480DB341192A957A00EE3EEF /* CoreData.framework in Frameworks */,
 				480DB33F192A957A00EE3EEF /* UIKit.framework in Frameworks */,
@@ -103,6 +112,7 @@
 		480DB339192A957A00EE3EEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				480DB36F192A95AD00EE3EEF /* CoreLocation.framework */,
 				480DB33A192A957A00EE3EEF /* Foundation.framework */,
 				480DB33C192A957A00EE3EEF /* CoreGraphics.framework */,
 				480DB33E192A957A00EE3EEF /* UIKit.framework */,
@@ -117,8 +127,12 @@
 			children = (
 				480DB34B192A957A00EE3EEF /* AppDelegate.h */,
 				480DB34C192A957A00EE3EEF /* AppDelegate.m */,
+				480DB371192AC15900EE3EEF /* RootViewController.h */,
+				480DB372192AC15900EE3EEF /* RootViewController.m */,
 				480DB351192A957A00EE3EEF /* Images.xcassets */,
 				480DB34E192A957A00EE3EEF /* Locations.xcdatamodeld */,
+				480DB374192AE2E800EE3EEF /* Event.h */,
+				480DB375192AE2E800EE3EEF /* Event.m */,
 				480DB343192A957A00EE3EEF /* Supporting Files */,
 			);
 			path = Locations;
@@ -250,6 +264,8 @@
 			files = (
 				480DB34D192A957A00EE3EEF /* AppDelegate.m in Sources */,
 				480DB350192A957A00EE3EEF /* Locations.xcdatamodeld in Sources */,
+				480DB376192AE2E800EE3EEF /* Event.m in Sources */,
+				480DB373192AC15900EE3EEF /* RootViewController.m in Sources */,
 				480DB349192A957A00EE3EEF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
